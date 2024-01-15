@@ -1,12 +1,12 @@
 
-import Handlebars from 'handlebars/dist/handlebars'; 
-import templateSource from '../templates/data-template.handlebars'; 
+import Handlebars from 'dist/handlebars'; 
+import templateSource from '../templates/template.handlebars'; 
 const template = Handlebars.template(templateSource);
 
 const users = [
-  { id: 1, name: 'John Doe', email: 'john@example.com' },
-  { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
-  { id: 3, name: 'Bob Johnson', email: 'bob@example.com' },
+  { id: 1, name: 'John Doe',  },
+  { id: 2, name: 'Jane Smith',  },
+  { id: 3, name: 'Bob Johnson',},
   // Додайте більше користувачів за потребою
 ];
 
