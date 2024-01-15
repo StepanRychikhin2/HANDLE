@@ -1,6 +1,6 @@
 
-import Handlebars from 'dist/handlebars'; 
-import templateSource from '../templates/template.handlebars'; 
+import Handlebars from './template.handlebars'; 
+import templateSource from './template.handlebars'; 
 const template = Handlebars.template(templateSource);
 
 const users = [
