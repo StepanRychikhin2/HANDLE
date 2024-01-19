@@ -7,12 +7,12 @@ const users = [
   { id: 1, name: 'John Doe',  },
   { id: 2, name: 'Jane Smith',  },
   { id: 3, name: 'Bob Johnson',},
-  // Додайте більше користувачів за потребою
+  
 ];
 
 const appContainer = document.getElementById('app');
 
-// Функція для відображення користувачів
+
 function renderUsers(data) {
   appContainer.innerHTML = '';
 
@@ -24,10 +24,10 @@ function renderUsers(data) {
   console.log(123);
 }
 
-// Початкове відображення користувачів
+
 renderUsers(users);
 
-// Функція для фільтрації користувачів за ім'ям
+
 function filterUsersByName(name) {
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(name.toLowerCase())
@@ -35,7 +35,7 @@ function filterUsersByName(name) {
   renderUsers(filteredUsers);
 }
 
-// Додавання прослуховувача подій для інпута фільтрації
+
 const filterInput = document.getElementById('filterInput');
 filterInput.addEventListener('input', (event) => {
   filterUsersByName(event.target.value);
@@ -54,9 +54,9 @@ function editUser(userId) {
   }
 }
 
-// Функція для видалення користувача
+
 function deleteUser(userId) {
-  const confirmed = confirm('Are you sure you want to delete this user?');
+  const confirmed = confirm('delete thi user?');
   if (confirmed) {
     const index = users.findIndex((user) => user.id === userId);
     if (index !== -1) {
