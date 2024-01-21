@@ -2458,8 +2458,7 @@ var _default = exports.default = templateFunction;
 },{"handlebars/dist/handlebars.runtime":"../node_modules/handlebars/dist/handlebars.runtime.js"}],"data.json":[function(require,module,exports) {
 module.exports = [{
   "name": "banana",
-  "price": 25,
-  "quantity": 10
+  "price": 25
 }, {
   "name": "apple",
   "price": 15,
@@ -5504,7 +5503,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53866" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54247" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

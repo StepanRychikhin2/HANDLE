@@ -1,8 +1,8 @@
 [
   {
     "name": "banana",
-    "price": 25,
-    "quantity": 10
+    "price": 25
+
   },
   {
     "name": "apple",
