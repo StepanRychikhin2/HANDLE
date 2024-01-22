@@ -1,31 +1,36 @@
 import source from "./template.hbs";
 import data from "./data.json";
-let jsData = data;
-import { log } from "console";
+let saveData = data;
 
-function createList(data) {
-    return data.map((obj) => {
+function createList(date) {
+    return date.map((obj) => {
         return source(obj);
     }).join("");
 }
-const products = document.querySelector(".products");
-products.innerHTML = createList(data);
+const shop = document.querySelector(".shop");
+shop.innerHTML = createList(data);
 
-const filterName = document.querySelector("#one");
-const filterPrice = document.querySelector("#two");
-const filterQuantity = document.querySelector("#three");
+const name = document.querySelector("#name");
+const price = document.querySelector("#prise");
+const pover = document.querySelector("#pover");
 
-filterName.addEventListener("click", () => {
-    jsData.sort((a,b) => a.name.localeCompare(b.name));
-    products.innerHTML = createList(data);
+name.addEventListener("click", () => {
+
+    saveData.sort((a,b) => a.name.localeCompare(b.name));
+    shop.innerHTML = createList(data);
+
 });
 
-filterPrice.addEventListener("click", () => {
-    jsData.sort((a,b) => a.price - b.price);
-    products.innerHTML = createList(data);
+price.addEventListener("click", () => {
+
+    saveData.sort((a,b) => a.price - b.price);
+    shop.innerHTML = createList(data);
+
 });
 
-filterQuantity.addEventListener("click", () => {
-    jsData.sort((a,b) => a.quantity - b.quantity);
-    products.innerHTML = createList(data);
+pover.addEventListener("click", () => {
+
+    saveData.sort((a,b) => a.pover - b.pover);
+   
+    shop.innerHTML = createList(data);
 });

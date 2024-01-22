@@ -1,22 +1,22 @@
 [
   {
-    "name": "banana",
-    "price": 25
-
+    "name": "480",
+    "price": 2500,
+    "pover": 12
   },
   {
-    "name": "apple",
-    "price": 15,
-    "quantity": 30
+    "name": "4080",
+    "price": 40000,
+    "pover": 30
   },
   {
-    "name": "pear",
-    "price": 20,
-    "quantity": 20
+    "name": "3050",
+    "price": 21000,
+    "pover": 20
   },
   {
-    "name": "lemon",
-    "price": 20,
-    "quantity": 15
+    "name": "1080",
+    "price": 12000,
+    "pover": 15
   }
 ]

@@ -13,17 +13,11 @@
     "build": "parcel build src/*.html --no-minify --no-source-maps --public-url ./"
    
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yasinskislava/goit-js-hw-14.git"
-  },
+ 
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yasinskislava/goit-js-hw-14/issues"
-  },
-  "homepage": "https://yasinskislava.github.io/goit-js-hw-14/",
+ 
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "parcel": "^2.11.0",
